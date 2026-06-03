@@ -1,0 +1,8 @@
+systemctl --user start docker
+export DOCKER_HOST=unix:///run/user/$(id -u)/docker.sock
+export CODE_AGENT_WORKSPACE_HOST_DIR="$(cd ../../.. && pwd)"
+export CODE_AGENT_WORKSPACE_CONTAINER_DIR="/workspace"
+export CODE_AGENT_WORKSPACE_READ_ONLY="true"
+export CODE_AGENT_POOL_SIZE="2"
+export CODE_AGENT_MODEL="claude-haiku-4-5-20251001"
+uvicorn terra_agent.code_agent.api:app --host 0.0.0.0 --port 8000
