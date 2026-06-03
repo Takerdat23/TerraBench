@@ -1,0 +1,1 @@
+"""Local forecast model wrappers."""

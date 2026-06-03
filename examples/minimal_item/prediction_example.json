@@ -1,0 +1,23 @@
+{
+  "answers": [
+    {
+      "key": "mock_score",
+      "value": 0.98
+    }
+  ],
+  "trace": [
+    {
+      "type": "tool",
+      "name": "mock_numeric_answer",
+      "arguments": {
+        "answer_key": "mock_score"
+      },
+      "status": "success",
+      "content": "Synthetic example prediction."
+    }
+  ],
+  "metadata": {
+    "synthetic": true,
+    "public_example": true
+  }
+}

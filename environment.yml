@@ -1,0 +1,102 @@
+name: terrabench
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  - setuptools
+  - wheel
+
+  # Build tools for source-based external simulators such as DSSAT-CSM.
+  - cmake
+  - make
+  - git
+  - gcc_linux-64
+  - gxx_linux-64
+  - gfortran_linux-64
+
+  # Scientific/geospatial runtime used by climate tools and simulator adapters.
+  - numpy
+  - pandas
+  - pyyaml
+  - pytest
+  - ruff
+  - scipy
+  - xarray
+  - netcdf4
+  - h5py
+  - openpyxl
+  - xlrd
+  - matplotlib
+  - pillow
+  - pyproj
+  - shapely
+  - rasterio
+  - cartopy
+  - networkx
+  - osmnx
+  - rioxarray
+  - xesmf
+  - esmpy
+  - intake-esm
+  - dask
+  - zarr
+  - rclone
+
+  # Official CLIMADA backend. Keep this as a conda package because CLIMADA has
+  # compiled geospatial dependencies that are not reliably solved with pip alone.
+  - climada
+
+  - pip:
+      # Agent and model API runtime.
+      - agentscope
+      - gymnasium
+      - python-dotenv
+      - openai
+      - anthropic
+      - docker
+      - rpyc
+      - google-genai
+      - google-generativeai
+      - fastapi
+      - uvicorn
+      - pydantic
+      - python-multipart
+      - requests
+      - tenacity
+      - certifi
+      - pypdf
+      - rpyc
+      - docker
+      - gymnasium
+      - scikit-learn
+      - mysql-connector-python
+      - rich
+      - tqdm
+      - config
+      - simplejson
+
+      # Climate data access.
+      - cdsapi
+      - ecmwf-datastores-client
+      - openmeteo-requests
+      - requests-cache
+      - retry-requests
+      - earthengine-api
+
+      # Forecast/model tooling.
+      - microsoft-aurora
+      - onnxruntime
+      - torch
+      - transformers
+      - qwen-vl-utils
+
+      # Simulator-side Python packages.
+      - aquacrop
+      - pythermalcomfort
+      - eclipse-sumo
+
+      # Note: FAO AquaCrop standalone, DSSAT-CSM executables, EnergyPlus, and
+      # BenMAP are configured by external paths/commands in .env; see
+      # EXTERNAL_SIMULATOR_DOWNLOAD_INSTRUCTIONS.txt.

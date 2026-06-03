@@ -1,0 +1,6 @@
+paths:
+  benchmark_root: data/sample
+  example_item: examples/minimal_item
+  output_root: outputs
+  artifact_root: outputs/artifacts
+  evaluation_results: evaluation_results

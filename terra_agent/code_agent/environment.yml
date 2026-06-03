@@ -1,0 +1,28 @@
+name: intercode
+channels:
+  - defaults
+dependencies:
+  - python=3.9
+  - pip<26
+  - pip:
+      - fastapi
+      - uvicorn
+      - pydantic
+      - rpyc
+      - docker
+      - gymnasium
+      - numpy
+      - pandas
+      - scipy
+      - scikit-learn
+      - mysql-connector-python
+      - rich
+      - tqdm
+      - requests
+      - tenacity
+      - openai
+      - anthropic
+      - google-generativeai
+      - config
+      - simplejson
+      - python-multipart

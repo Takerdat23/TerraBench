@@ -1,0 +1,10 @@
+{
+  "item_id": "sample_minimal_001",
+  "question": "For the synthetic TerraBench smoke-test cell, what is the normalized mock score?",
+  "track": "Fundamentals",
+  "answer_keys": ["mock_score"],
+  "metadata": {
+    "synthetic": true,
+    "public_example": true
+  }
+}

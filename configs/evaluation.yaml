@@ -1,0 +1,10 @@
+tooluse_weights:
+  ToolAcc: 0.30
+  InstAcc: 0.15
+  ArgAcc: 0.20
+  CategoryF1: 0.15
+  OrderScore: 0.15
+  ToolCallSuccessRate: 0.05
+
+numeric:
+  require_tolerance_fields: true

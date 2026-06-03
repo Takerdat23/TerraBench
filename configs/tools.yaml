@@ -1,0 +1,30 @@
+tools:
+  default_mode: mock
+  groups:
+    - basic
+    - core
+    - era5_obs
+    - air_quality
+    - data_crawl
+    - ensemble_verify
+    - seasonal
+    - geo_osm
+    - satellite
+    - visualization
+    - forecast_models
+    - simulators
+    - web_search
+    - execution_server
+  credentials:
+    openai: OPENAI_API_KEY
+    google: GOOGLE_API_KEY
+    serper: SERPER_API_KEY
+    cds: CDS_API_KEY
+    earthengine_project: GEE_PROJECT_ID
+  prompts:
+    agent_system: terra_agent/prompts/full_agent/Annotating_prompt.yaml
+    history_compression: terra_agent/prompts/full_agent/history_compression_prompt.md
+    web_summary: terra_agent/prompts/runtime/web_summary_prompt.yaml
+    inference: terra_agent/prompts/full_agent/Inference_prompt.yaml
+    code_agent: terra_agent/code_agent/claude_prompt.yaml
+    math_agent: terra_agent/code_agent/claude_prompt.yaml

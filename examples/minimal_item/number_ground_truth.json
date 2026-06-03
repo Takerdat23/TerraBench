@@ -1,0 +1,9 @@
+[
+  {
+    "key": "mock_score",
+    "value": 1.0,
+    "abs_tol": 0.05,
+    "rel_tol": 0.0,
+    "floor_scale": 1.0
+  }
+]

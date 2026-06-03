@@ -1,0 +1,13 @@
+project:
+  name: TerraBench
+  agent_name: TerraAgent
+  python_package: terrabench
+
+paths:
+  benchmark_root: data/sample
+  output_root: outputs
+  artifact_root: outputs/artifacts
+
+agent:
+  mock_tools: true
+  dry_run: false

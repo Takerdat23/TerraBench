@@ -1,0 +1,16 @@
+{
+  "metadata": {
+    "synthetic": true
+  },
+  "steps": [
+    {
+      "type": "tool",
+      "name": "mock_numeric_answer",
+      "arguments": {
+        "answer_key": "mock_score"
+      },
+      "status": "success",
+      "content": "Synthetic reference trace for public smoke testing."
+    }
+  ]
+}

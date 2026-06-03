@@ -1,0 +1,6 @@
+services:
+  terrabench:
+    build: .
+    command: python scripts/run_smoke_test.py
+    volumes:
+      - ./outputs:/app/outputs
