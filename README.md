@@ -2,9 +2,17 @@
 
 TerraBench is a research benchmark for evaluating whether agents can reason over heterogeneous Earth-system data. TerraAgent is the companion agent/tool-execution framework used to run benchmark workflows and record structured traces.
 
-This repository is organized as a public research artifact for the paper:
+## Repository Metadata
 
-`TerraBench: Can Agents Reason Over Heterogeneous Earth-System Data?`
+- Repository: [Takerdat23/TerraBench](https://github.com/Takerdat23/TerraBench)
+- Python packages: `terrabench`, `terra_agent`
+- License: MIT
+
+## Overview Figures
+
+![TerraAgent environment overview](assets/terra_agent_overview.svg)
+
+![TerraBench benchmark task sets](assets/terrabench_task_sets.svg)
 
 ## What Is TerraBench?
 
@@ -107,10 +115,6 @@ python scripts/run_evaluation.py \
   --out outputs/example_eval
 ```
 
-## Benchmark Data And Artifact Access
-
-Only a small sanitized sample is included. Full benchmark artifacts, raw model traces, large geospatial files, and external simulator binaries are not bundled. See [docs/data_access.md](docs/data_access.md) and [EXTERNAL_SIMULATOR_DOWNLOAD_INSTRUCTIONS.txt](EXTERNAL_SIMULATOR_DOWNLOAD_INSTRUCTIONS.txt).
-
 ## Tool Registry Overview
 
 Tools implement `terra_agent.tools.base.BaseTool` and register through `terra_agent.tools.registry.register_tool`. New tools can be added without editing the agent runner or benchmark evaluator.
@@ -138,11 +142,31 @@ Full paper reproduction may require separately hosted traces, external data-serv
 
 ## Citation
 
-See [CITATION.cff](CITATION.cff).
+This repository builds on InterCode and AgentScope. Please cite these upstream
+works when using the code-agent or agent-framework components:
+
+```bibtex
+@misc{yang2023intercode,
+  title = {InterCode: Standardizing and Benchmarking Interactive Coding with Execution Feedback},
+  author = {John Yang and Akshara Prabhakar and Karthik Narasimhan and Shunyu Yao},
+  year = {2023},
+  eprint = {2306.14898},
+  archivePrefix = {arXiv},
+  primaryClass = {cs.CL}
+}
+
+@article{agentscope_v1,
+  title = {AgentScope 1.0: A Developer-Centric Framework for Building Agentic Applications},
+  author = {Dawei Gao and Zitao Li and Yuexiang Xie and Weirui Kuang and Liuyi Yao and Bingchen Qian and Zhijian Ma and Yue Cui and Haohao Luo and Shen Li and Lu Yi and Yi Yu and Shiqi He and Zhiling Luo and Wenmeng Zhou and Zhicheng Zhang and Xuguang He and Ziqian Chen and Weikai Liao and Farruh Isakulovich Kushnazarov and Yaliang Li and Bolin Ding and Jingren Zhou},
+  journal = {CoRR},
+  volume = {abs/2508.16279},
+  year = {2025}
+}
+```
 
 ## License
 
-License pending. A final open-source license should be selected before public release.
+TerraBench is released under the MIT License. See [LICENSE](LICENSE).
 
 ## Known Limitations
 

@@ -1,0 +1,80 @@
+cff-version: 1.2.0
+title: TerraBench
+message: "If you use TerraBench or TerraAgent, please cite the TerraBench paper."
+version: v1.0.0-arxiv
+repository-code: "https://github.com/Takerdat23/TerraBench"
+authors:
+  - family-names: "Author"
+    given-names: "Placeholder"
+preferred-citation:
+  type: article
+  title: "TerraBench: Can Agents Reason Over Heterogeneous Earth-System Data?"
+  authors:
+    - family-names: "Author"
+      given-names: "Placeholder"
+  year: 2026
+references:
+  - type: generic
+    title: "InterCode: Standardizing and Benchmarking Interactive Coding with Execution Feedback"
+    authors:
+      - family-names: "Yang"
+        given-names: "John"
+      - family-names: "Prabhakar"
+        given-names: "Akshara"
+      - family-names: "Narasimhan"
+        given-names: "Karthik"
+      - family-names: "Yao"
+        given-names: "Shunyu"
+    year: 2023
+  - type: article
+    title: "AgentScope 1.0: A Developer-Centric Framework for Building Agentic Applications"
+    authors:
+      - family-names: "Gao"
+        given-names: "Dawei"
+      - family-names: "Li"
+        given-names: "Zitao"
+      - family-names: "Xie"
+        given-names: "Yuexiang"
+      - family-names: "Kuang"
+        given-names: "Weirui"
+      - family-names: "Yao"
+        given-names: "Liuyi"
+      - family-names: "Qian"
+        given-names: "Bingchen"
+      - family-names: "Ma"
+        given-names: "Zhijian"
+      - family-names: "Cui"
+        given-names: "Yue"
+      - family-names: "Luo"
+        given-names: "Haohao"
+      - family-names: "Li"
+        given-names: "Shen"
+      - family-names: "Yi"
+        given-names: "Lu"
+      - family-names: "Yu"
+        given-names: "Yi"
+      - family-names: "He"
+        given-names: "Shiqi"
+      - family-names: "Luo"
+        given-names: "Zhiling"
+      - family-names: "Zhou"
+        given-names: "Wenmeng"
+      - family-names: "Zhang"
+        given-names: "Zhicheng"
+      - family-names: "He"
+        given-names: "Xuguang"
+      - family-names: "Chen"
+        given-names: "Ziqian"
+      - family-names: "Liao"
+        given-names: "Weikai"
+      - family-names: "Kushnazarov"
+        given-names: "Farruh Isakulovich"
+      - family-names: "Li"
+        given-names: "Yaliang"
+      - family-names: "Ding"
+        given-names: "Bolin"
+      - family-names: "Zhou"
+        given-names: "Jingren"
+    journal: "CoRR"
+    volume: "abs/2508.16279"
+    year: 2025
